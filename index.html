@@ -20,6 +20,7 @@
     --accent-bear: #c9a96e;
     --accent-kreepy: #8b5cf6;
     --accent-outfit: #5ec4a8;
+    --accent-sql: #4a9eff;
   }
 
   html, body {
@@ -174,6 +175,12 @@
   .card--outfit { --accent: var(--accent-outfit); }
   .card--outfit::before {
     background: radial-gradient(ellipse at 50% 0%, rgba(94,196,168,0.12) 0%, transparent 70%);
+  }
+
+  /* SQL card */
+  .card--sql { --accent: var(--accent-sql); }
+  .card--sql::before {
+    background: radial-gradient(ellipse at 50% 0%, rgba(74,158,255,0.12) 0%, transparent 70%);
   }
 
   .card:hover::before { opacity: 1; }
@@ -473,9 +480,27 @@
 
   <div class="cards">
 
+    <!-- SQL Academy -->
+    <a class="card card--sql" href="https://cfranks-sql.vercel.app/" target="_blank" rel="noopener">
+      <span class="card-number">01</span>
+      <div class="card-icon">🗄️</div>
+      <div>
+        <h2 class="card-title">SQL Academy</h2>
+      </div>
+      <p class="card-desc">An interactive SQL learning environment. Practice queries, explore schemas, and build fluency through hands-on challenges.</p>
+      <div class="card-footer">
+        <span class="card-tag">Data · Learning</span>
+        <div class="card-arrow">
+          <svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2 10L10 2M10 2H4M10 2V8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+      </div>
+    </a>
+
     <!-- Corre Bear -->
     <a class="card card--bear" href="https://cf-polar.vercel.app/" target="_blank" rel="noopener">
-      <span class="card-number">01</span>
+      <span class="card-number">02</span>
       <div class="card-icon">🐻</div>
       <div>
         <h2 class="card-title">Corre Bear</h2>
@@ -493,7 +518,7 @@
 
     <!-- Kreepy Basement -->
     <a class="card card--kreepy" href="https://cf-kreepy.vercel.app/" target="_blank" rel="noopener">
-      <span class="card-number">02</span>
+      <span class="card-number">03</span>
       <div class="card-icon">👁</div>
       <div>
         <h2 class="card-title">Kreepy Basement</h2>
@@ -512,7 +537,7 @@
 
     <!-- Outfit Gen -->
     <a class="card card--outfit" href="https://carltonfranks.vercel.app/" target="_blank" rel="noopener">
-      <span class="card-number">03</span>
+      <span class="card-number">04</span>
       <div class="card-icon">✦</div>
       <div>
         <h2 class="card-title">Outfit Gen</h2>
