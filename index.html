@@ -22,6 +22,7 @@
     --accent-outfit: #5ec4a8;
     --accent-sql: #4a9eff;
     --accent-python: #f7c948;
+    --accent-risk: #e05555;
   }
 
   html, body {
@@ -188,6 +189,12 @@
   .card--python { --accent: var(--accent-python); }
   .card--python::before {
     background: radial-gradient(ellipse at 50% 0%, rgba(247,201,72,0.12) 0%, transparent 70%);
+  }
+
+  /* Risk card */
+  .card--risk { --accent: var(--accent-risk); }
+  .card--risk::before {
+    background: radial-gradient(ellipse at 50% 0%, rgba(224,85,85,0.12) 0%, transparent 70%);
   }
 
   .card:hover::before { opacity: 1; }
@@ -487,9 +494,28 @@
 
   <div class="cards">
 
+    <!-- Client Risk Simulator -->
+    <a class="card card--risk" href="https://clientrisk.vercel.app/" target="_blank" rel="noopener">
+      <span class="card-number">01</span>
+      <div class="card-icon">📊</div>
+      <div>
+        <h2 class="card-title">Client Risk Simulator</h2>
+        <span class="platform-badge">Desktop · Tablet</span>
+      </div>
+      <p class="card-desc">Simulate enterprise client risk scenarios and stress-test your portfolio. Built for Customer Success professionals managing high-stakes accounts.</p>
+      <div class="card-footer">
+        <span class="card-tag">CS · Strategy</span>
+        <div class="card-arrow">
+          <svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2 10L10 2M10 2H4M10 2V8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+      </div>
+    </a>
+
     <!-- SQL Academy -->
     <a class="card card--sql" href="https://cfranks-sql.vercel.app/" target="_blank" rel="noopener">
-      <span class="card-number">01</span>
+      <span class="card-number">02</span>
       <div class="card-icon">🗄️</div>
       <div>
         <h2 class="card-title">SQL Academy</h2>
@@ -508,7 +534,7 @@
 
     <!-- Python Academy -->
     <a class="card card--python" href="https://cfranks-python.vercel.app/" target="_blank" rel="noopener">
-      <span class="card-number">02</span>
+      <span class="card-number">03</span>
       <div class="card-icon">🐍</div>
       <div>
         <h2 class="card-title">Python Academy</h2>
@@ -527,7 +553,7 @@
 
     <!-- Kreepy Basement -->
     <a class="card card--kreepy" href="https://cf-kreepy.vercel.app/" target="_blank" rel="noopener">
-      <span class="card-number">03</span>
+      <span class="card-number">04</span>
       <div class="card-icon">👁</div>
       <div>
         <h2 class="card-title">Kreepy Basement</h2>
@@ -546,7 +572,7 @@
 
     <!-- Corre Bear -->
     <a class="card card--bear" href="https://cf-polar.vercel.app/" target="_blank" rel="noopener">
-      <span class="card-number">04</span>
+      <span class="card-number">05</span>
       <div class="card-icon">🐻</div>
       <div>
         <h2 class="card-title">Corre Bear</h2>
@@ -564,7 +590,7 @@
 
     <!-- Outfit Gen -->
     <a class="card card--outfit" href="https://carltonfranks.vercel.app/" target="_blank" rel="noopener">
-      <span class="card-number">05</span>
+      <span class="card-number">06</span>
       <div class="card-icon">✦</div>
       <div>
         <h2 class="card-title">Outfit Gen</h2>
