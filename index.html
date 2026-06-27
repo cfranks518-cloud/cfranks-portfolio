@@ -610,7 +610,162 @@
 
   </div>
 
+  <!-- Movie Projects Section -->
+  <style>
+    .movie-section {
+      padding: 5rem 4rem 3rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .movie-inner {
+      position: relative;
+    }
+    .movie-inner::after {
+      content: '';
+      display: block;
+      height: 1px;
+      margin-top: 3rem;
+      background: linear-gradient(to right, var(--accent-bear), #8b5cf6, var(--accent-outfit));
+      opacity: 0.4;
+    }
+    .movie-card {
+      border: 1px solid rgba(255,255,255,0.07);
+      border-radius: 6px;
+      overflow: hidden;
+      background: rgba(10,5,15,0.6);
+      box-shadow: 0 8px 32px rgba(0,0,0,0.5);
+    }
+    .movie-header {
+      padding: 1.75rem 2rem 1.25rem;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    .movie-meta {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 0.75rem;
+    }
+    .movie-genre {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.58rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: #e05555;
+      border: 1px solid rgba(224,85,85,0.4);
+      padding: 0.2rem 0.55rem;
+      border-radius: 3px;
+      background: rgba(224,85,85,0.08);
+    }
+    .movie-warning {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.58rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.35);
+    }
+    .movie-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 300;
+      color: var(--fg);
+      margin: 0 0 0.5rem;
+      line-height: 1.1;
+    }
+    .movie-title em {
+      font-style: italic;
+      color: rgba(255,255,255,0.55);
+    }
+    .movie-credit {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.55rem;
+      letter-spacing: 0.08em;
+      color: rgba(255,255,255,0.25);
+      margin: 0;
+    }
+    .movie-player-wrap {
+      background: #000;
+      line-height: 0;
+    }
+    .movie-player-wrap iframe {
+      width: 100%;
+      aspect-ratio: 16/9;
+      display: block;
+      border: none;
+    }
+    .movie-play-btn {
+      display: flex;
+      align-items: center;
+      gap: 1.75rem;
+      padding: 2.5rem 2rem;
+      text-decoration: none;
+      background: rgba(0,0,0,0.4);
+      transition: background 0.2s ease;
+    }
+    .movie-play-btn:hover {
+      background: rgba(224,85,85,0.06);
+    }
+    .movie-play-btn:hover .movie-play-icon svg circle:first-child {
+      stroke: rgba(224,85,85,0.85);
+    }
+    .movie-play-icon svg {
+      width: 72px;
+      height: 72px;
+      transition: transform 0.2s ease;
+      filter: drop-shadow(0 0 18px rgba(224,85,85,0.25));
+    }
+    .movie-play-btn:hover .movie-play-icon svg {
+      transform: scale(1.06);
+      filter: drop-shadow(0 0 28px rgba(224,85,85,0.45));
+    }
+    .movie-play-label {
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+    }
+    .movie-play-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.5rem;
+      font-weight: 300;
+      color: rgba(255,255,255,0.85);
+      letter-spacing: 0.02em;
+    }
+    .movie-play-sub {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.6rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.3);
+    }
+  </style>
 
+  <section class="movie-section" aria-label="Movie Projects">
+    <div class="movie-inner">
+      <p class="eyebrow">Movie Projects</p>
+      <div class="movie-card">
+        <div class="movie-header">
+          <div class="movie-meta">
+            <span class="movie-genre">Horror</span>
+            <span class="movie-warning">⚠ Watch at your own risk</span>
+          </div>
+          <h2 class="movie-title">The <em>Case</em></h2>
+          <p class="movie-credit">© Carlton Franks &nbsp;·&nbsp; cfranks518@gmail.com &nbsp;·&nbsp; All rights reserved</p>
+        </div>
+        <a class="movie-play-btn" href="https://youtu.be/UPFnpfZVwpQ" target="_blank" rel="noopener" aria-label="Watch The Case on YouTube">
+          <div class="movie-play-icon">
+            <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="40" cy="40" r="39" stroke="rgba(224,85,85,0.5)" stroke-width="1"/>
+              <circle cx="40" cy="40" r="39" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+              <path d="M32 26l24 14-24 14V26z" fill="#e05555"/>
+            </svg>
+          </div>
+          <div class="movie-play-label">
+            <span class="movie-play-title">Watch on YouTube</span>
+            <span class="movie-play-sub">Opens in new tab &nbsp;↗</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
 
   <section class="about" aria-label="About Carlton Franks">
     <div class="about-inner">
