@@ -801,7 +801,7 @@
           <p class="movie-credit">© Carlton Franks &nbsp;·&nbsp; cfranks518@gmail.com &nbsp;·&nbsp; All rights reserved</p>
         </div>
         <div class="movie-trigger-wrap">
-          <button class="movie-trigger" onclick="var m=document.getElementById('caseModal');var v=document.getElementById('caseVideo');m.classList.add('open');v.load();v.play().catch(function(){});">
+          <button class="movie-trigger" onclick="var m=document.getElementById('caseModal');var v=document.getElementById('caseVideo');m.classList.add('open');v.load();">
             <span class="movie-trigger-icon">&#9654;</span>
             <span class="movie-trigger-label">Watch The Case</span>
           </button>
@@ -929,8 +929,8 @@
     <div class="case-modal-inner">
       <button class="case-modal-close" onclick="document.getElementById('caseModal').classList.remove('open');var v=document.getElementById('caseVideo');v.pause();v.currentTime=0;">✕</button>
       <p class="case-modal-label">The Case &nbsp;·&nbsp; Horror &nbsp;·&nbsp; © Carlton Franks · cfranks518@gmail.com</p>
-      <video id="caseVideo" class="case-modal-video" controls controlsList="nodownload" preload="none">
-        <source src="The_Case.mp4" type="video/mp4" />
+      <video id="caseVideo" class="case-modal-video" controls controlsList="nodownload" preload="metadata">
+        <source src="the-case.mp4" type="video/mp4" />
       </video>
     </div>
   </div>
